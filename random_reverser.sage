@@ -2,7 +2,7 @@ def main():
     a = 25214903917 # lcg multiplier
     c = 11	        # lcg increment
     m = 2^48	    # lcg modulus
-    bound = 2^6	    # nextInt() bound
+    bound = 2^8	    # nextInt() bound
 
     # load rng outputs into a vector
     with open('rng_outputs.txt', 'r') as f:
