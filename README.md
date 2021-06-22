@@ -1,2 +1,2 @@
-# java-random-reverser
-A tool written in SageMath to determine a java.util.Random object's internal seed
+# Java Random Reverser
+This is a tool to determine the internal seed of a `java.util.Random` object from a sequence of `nextInt(int bound)` calls. This follows the approach described by [Matthew Bolan](https://www.youtube.com/channel/UCB4XuRBJZBOpnoJSWekMohw) of using a change of basis on the lattice formed by plotting consecutive seeds of `java.util.Random` to simplify the task of finding candidate seeds to finding integer points lying between minimum and maximum coordinates.
