@@ -4,9 +4,8 @@ def main():
     m = 2^48	    # lcg modulus
     bound = 2^8	    # nextInt() bound
 
-    # load rng outputs into a vector
-    with open('rng_outputs.txt', 'r') as f:
-        data = vector(QQ(i.strip()) for i in f)
+    # read rng outputs into a vector
+    data = vector(QQ(i.strip()) for i in sys.stdin)
     dim = data.degree()
     bounds = vector(QQ(bound) for i in range(0, dim))
 
